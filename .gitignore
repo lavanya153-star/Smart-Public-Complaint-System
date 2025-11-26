@@ -1,0 +1,8 @@
+# IntelliJ files
+*.iml
+.idea/
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
