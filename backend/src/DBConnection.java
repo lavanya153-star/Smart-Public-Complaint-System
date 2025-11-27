@@ -19,10 +19,10 @@ public class DBConnection {
             conn.close();
         } catch (ClassNotFoundException e) {
             System.out.println("❌ JDBC Driver not found.");
-            e.printStackTrace();
+           // e.printStackTrace();
         } catch (SQLException e) {
             System.out.println("❌ Connection failed.");
-            e.printStackTrace();
+           // e.printStackTrace();
         }
     }
 }
