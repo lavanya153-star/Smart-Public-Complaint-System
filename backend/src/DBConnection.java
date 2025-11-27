@@ -6,7 +6,7 @@ public class DBConnection {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/grievance_system";
         String user = "root"; // replace with your MySQL username
-        String password = "lav@123ramu1"; // replace with your MySQL password
+        String password = "root"; // replace with your MySQL password
 
         try {
             // Load MySQL JDBC Driver
