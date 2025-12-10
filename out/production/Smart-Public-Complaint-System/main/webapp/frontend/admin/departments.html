@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Departments</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5 col-md-6">
+
+    <h3 class="text-center mb-4">Manage Departments</h3>
+
+    <form action="/Smart-Public-Complaint-System/adminOperations" method="post">
+        <input type="hidden" name="action" value="addDepartment">
+
+        <label class="form-label">Enter New Department</label>
+        <input type="text" class="form-control" name="department" required>
+
+        <button class="btn btn-primary w-100 mt-3">Add Department</button>
+    </form>
+
+    <hr>
+
+    <a href="/Smart-Public-Complaint-System/adminOperations?action=viewDepartments"
+       class="btn btn-success w-100">
+        View All Departments
+    </a>
+
+</div>
+
+</body>
+</html>
