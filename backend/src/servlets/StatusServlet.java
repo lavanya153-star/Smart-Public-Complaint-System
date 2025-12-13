@@ -49,7 +49,7 @@ public class StatusServlet extends HttpServlet {
                 out.println("<table class='table table-bordered'>");
                 out.println("<thead class='table-primary'>");
                 out.println("<tr>"
-
+                        + "<th>Category</th>"
                         + "<th>Description</th>"
                         + "<th>Status</th>"
                         + "</tr>");
@@ -58,7 +58,7 @@ public class StatusServlet extends HttpServlet {
 
                 do {
                     out.println("<tr>");
-
+                    out.println("<td>" + rs.getString("category") + "</td>");
                     out.println("<td>" + rs.getString("description") + "</td>");
                     out.println("<td><b>" + rs.getString("status") + "</b></td>");
                     out.println("</tr>");
@@ -69,7 +69,7 @@ public class StatusServlet extends HttpServlet {
 
         } catch (Exception e) {
             e.printStackTrace();
-
+            out.println("<div class='alert alert-danger'>Error occurred while fetching status.</div>");
         }
 
         out.println("<br><a href='/Smart-Public-Complaint-System/frontend/user/home.html' class='btn btn-secondary w-100'>Back to Home</a>");
