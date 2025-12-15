@@ -21,6 +21,6 @@ public class HomeServlet extends HttpServlet {
         }
 
         // Logged in → allow access to submit complaint page
-        response.sendRedirect("Smart-Public-Complaint-System/frontend/user/submitComplaint.html");
+        response.sendRedirect("/Smart-Public-Complaint-System/frontend/user/submitComplaint.html");
     }
 }

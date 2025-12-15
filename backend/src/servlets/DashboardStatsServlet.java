@@ -36,9 +36,7 @@ public class DashboardStatsServlet extends HttpServlet {
             if (rs3.next()) progress = rs3.getInt(1);
 
             // Completed
-            PreparedStatement pst4 = con.prepareStatement("SELECT COUNT(*) FROM complaints WHERE status='Completed'");
-            ResultSet rs4 = pst4.executeQuery();
-            if (rs4.next()) completed = rs4.getInt(1);
+
 
         } catch (Exception e) {
             e.printStackTrace();
